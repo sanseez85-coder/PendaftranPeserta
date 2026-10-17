@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <style>
+            Body { font-family: Arial; background: #f4f8ff;}
+            h1 { color: #1a56b0; text-align: center; }
+            form { background: #ffff; border: 1px solid #ccd; padding: 25px; margin-bottom:25px ; box-shadow: 0 1px 3px #ddd}
+            input[type="text"] {width: 400px; max-width: 20%; font-size: 15px; border: 1px solid; border-radius: 3px;}
+            .baris {margin-bottom: 18px; font-size: 20px;}
+            input[type="radio"] {width: 15px; height: 15px; vertical-align: middle;}
+            table { border-collapse: collapse; width: 100%; }
+            th { background: #1a56b0; color: white; padding: 6px; }
+            td { border: 1px solid #ccd; padding: 6px; text-align: center;}
+            tbody tr:nth-child(even) {background: #e6eefb ;}
+            tbody tr:nth-child(odd) {background: #ffff;}
+            .aktif { background: #e6eefb; }
+            #judul { font-size: 24px; }
+            button { background: #1a56b0; color: white; }
+
+        </style> 
+        <title>Pendataran Peserta</title>
+        <body>
+            <h1>Pendaftaran peserta</h1>
+            <form action="proses.php" method="post">
+                nama:<input type="text"><br>
+                jenis kelamin:
+                <input type="radio" name="jk" value="Laki-laki">Laki-laki
+                <input type="radio" name="jk" value="Perempuan">Perempuan<br>
+                jurusan:
+                <select name="jurusan">
+                    <option>Teknologi informasi</option>
+                    <option>Peternakan</option>
+                    <option>PBSI</option>
+                    <option>PGSD</option>
+                    <option>PTO</option>
+                    <option>Hukum</option><br>
+                </select><br><br>
+                <button type="submit">Kirim</button>
+            </form><br><br>
+            <table border="1">
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Jurusan</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Fahri</td>
+                    <td>Peternakan</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Paman</td>
+                    <td>Teknologi Informasi</td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>
